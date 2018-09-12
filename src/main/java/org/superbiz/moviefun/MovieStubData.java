@@ -1,0 +1,33 @@
+package org.superbiz.moviefun;
+
+
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import static java.util.Arrays.asList;
+
+
+
+@Component
+public class MovieStubData {
+	
+	
+	
+	
+	public List<Movie> load(){
+		
+		//returns the array of movies as a list
+		 return asList(
+		            new Movie("Wedding Crashers", "David Dobkin", "Comedy", 7, 2005),
+		            new Movie("Starsky & Hutch", "Todd Phillips", "Action", 6, 2004),
+		            new Movie("Shanghai Knights", "David Dobkin", "Action", 6, 2003),
+		            new Movie("I-Spy", "Betty Thomas", "Adventure", 5, 2002),
+		            new Movie("The Royal Tenenbaums", "Wes Anderson", "Comedy", 8, 2001),
+		            new Movie("Zoolander", "Ben Stiller", "Comedy", 6, 2001),
+		            new Movie("Shanghai Noon", "Tom Dey", "Comedy", 7, 2000)
+		            );
+	}
+
+}
