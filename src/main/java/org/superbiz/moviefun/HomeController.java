@@ -27,9 +27,9 @@ public class HomeController {
 	@GetMapping("/")
 	public String index(){
 		
-		String index="index";
+//		String index="index";
 		
-		return index;
+		return "index";
 	}
 	
 	
