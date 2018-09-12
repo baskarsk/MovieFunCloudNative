@@ -25,7 +25,7 @@ public class HomeController {
 	}
 	
 	@GetMapping("/")
-	public String renderIndex(){
+	public String index(){
 		
 		String index="index";
 		
