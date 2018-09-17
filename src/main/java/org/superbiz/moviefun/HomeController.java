@@ -27,8 +27,9 @@ public class HomeController {
 	@GetMapping("/")
 	public String index(){
 		
-//		String index="index";
-		
+		//String index="index";
+		logger.info("====== In / method ====");
+		System.out.println("==== In / method ====");
 		return "index";
 	}
 	
@@ -37,12 +38,15 @@ public class HomeController {
 //	@Transactional
 	public String setup(Map<String,Object> model){
 		
+		System.out.println("==== In /setup =====" );
+		
 		for(Movie movie : movieData.load()){
 			
 			moviesBean.addMovie(movie);
 			
 		}
 		model.put("movies", moviesBean.getMovies());
+		System.out.println("==== Out /setup =====");
 		return "setup";
 		
 	}

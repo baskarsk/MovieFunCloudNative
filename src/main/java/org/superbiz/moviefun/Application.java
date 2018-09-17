@@ -14,8 +14,9 @@ public class Application {
 	}
 	
 	@Bean
-	public ServletRegistrationBean actionServletRegistration(ActionServlet actSrv){
-	
+	public ServletRegistrationBean servletRegistrationBean(ActionServlet actSrv){
+
+		System.out.println("===== In actionServletRegistration =====");
 		return new ServletRegistrationBean(actSrv,"/moviefun/*");
 	}
 

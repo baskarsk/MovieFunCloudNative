@@ -53,7 +53,8 @@ public class ActionServlet extends HttpServlet {
 
     private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
-
+        System.out.println("====== process method ====");
+        System.out.println("====== process method action :"+action);
         if ("Add".equals(action)) {
 
             String title = request.getParameter("title");

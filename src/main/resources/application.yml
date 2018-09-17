@@ -2,9 +2,11 @@ spring:
   jpa:
     generate-ddl: true
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    
   datasource:
     url: jdbc:mysql://localhost:3306/movies?useSSL=false
     username: root
+    password: root
     
   mvc.view:
       prefix: /WEB-INF/
@@ -13,5 +15,8 @@ spring:
   logging.level:
     root: WARN
     org.superbiz.moviefun: DEBUG
+    
+#  server:
+#   port: 9091
       
     
