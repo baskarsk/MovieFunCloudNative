@@ -4,9 +4,9 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
     
   datasource:
-    url: jdbc:mysql://localhost:3306/movies?useSSL=false
-    username: root
-    password: root
+    url: ${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_MYSQL_DB_DATABASE}
+    username: ${OPENSHIFT_MYSQL_DB_USERNAME}
+    password: ${OPENSHIFT_MYSQL_DB_PASSWORD}
     
   mvc.view:
       prefix: /WEB-INF/
