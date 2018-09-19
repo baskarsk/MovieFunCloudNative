@@ -4,14 +4,14 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
     
   datasource: 
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://moviecloudnative-mysql:3306/movies
-    username: user
-    password: password
-    
- #   url: jdbc:mysql://${MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_MYSQL_DB_DATABASE}
- #   username: ${OPENSHIFT_MYSQL_DB_USERNAME}
- #   password: ${OPENSHIFT_MYSQL_DB_PASSWORD}
+   
+#    url: jdbc:mysql://moviecloudnative-mysql:3306/movies
+#    username: user
+#    password: password
+    driverClassName: com.mysql.jdbc.Driver 
+    url: jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}
+    username: ${OPENSHIFT_MYSQL_DB_USERNAME}
+    password: ${OPENSHIFT_MYSQL_DB_PASSWORD}
     
   mvc.view:
       prefix: /WEB-INF/
