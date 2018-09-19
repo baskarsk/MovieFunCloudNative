@@ -3,7 +3,8 @@ spring:
     generate-ddl: true
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
     
-  datasource:
+  datasource: 
+    driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://moviecloudnative-mysql:3306/movies
     username: user
     password: password
