@@ -9,7 +9,7 @@ spring:
 #    username: user
 #    password: password
     driverClassName: com.mysql.jdbc.Driver 
-    url: jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}
+    url: jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}?useSSL=false
     username: ${OPENSHIFT_MYSQL_DB_USERNAME}
     password: ${OPENSHIFT_MYSQL_DB_PASSWORD}
     
